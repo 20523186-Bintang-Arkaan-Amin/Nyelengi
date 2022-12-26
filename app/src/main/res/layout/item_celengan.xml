@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/CLcelengan"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/black">
+
+    <TextView
+        android:id="@+id/TVjudulcelengan"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="Celengan Utama"
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        android:drawableLeft="@drawable/savings_yellow"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/spacegroteskregular"
+        />
+
+    <TextView
+        android:id="@+id/TVdescCelengan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/TVjudulcelengan"
+        android:text="“ya tabungan utama.”"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/spacegroteskregular"
+        />
+
+    <ImageView
+        android:id="@+id/IVcelengan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@+id/TVjudulcelengan"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/ic_baseline_keyboard_arrow_right_24_yellow"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="60dp"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

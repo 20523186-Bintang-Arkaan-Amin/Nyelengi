@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Simpan"
+    android:background="@drawable/gradient_bg"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/CLatas"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+
+    >
+
+    <TextView
+        android:id="@+id/tvtotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:fontFamily="@font/spacegroteskregular"
+        android:text="total seluruh celengan"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.122"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvmasukan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:fontFamily="@font/spacegroteskregular"
+        android:text="masukan terbesar"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.167"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvtarikan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:fontFamily="@font/spacegroteskregular"
+        android:text="tarikan terbesar"
+        android:textColor="#FF6915"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.675"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvidr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/spacegroteskregular"
+        android:text="IDR"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.087"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvtotal" />
+
+    <TextView
+        android:id="@+id/tvidrmasukan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:fontFamily="@font/spacegroteskregular"
+        android:text="+IDR"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.138"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvtotal" />
+
+    <TextView
+        android:id="@+id/tvidrtarikan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:fontFamily="@font/spacegroteskregular"
+        android:text="-IDR"
+        android:textColor="#FF5722"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.576"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvtotal" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        app:layout_constraintTop_toBottomOf="@+id/CLatas"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_margin="32dp"
+        android:background="@drawable/bg_curve"
+        >
+        <ImageView
+            android:id="@+id/BTclose2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/ic_baseline_close_24"
+            android:paddingLeft="28dp"
+            android:paddingTop="28dp"
+            />
+
+        <TextView
+            android:id="@+id/TVsimpancelengan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="simpan"
+            android:textColor="#A2AAAD"
+            android:paddingRight="28dp"
+            android:paddingTop="32dp"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/BTclose2"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:src="@drawable/money"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="32dp"
+            />
+
+
+        <EditText
+            android:id="@+id/ETjumlah"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginRight="48dp"
+            app:layout_constraintTop_toBottomOf="@+id/BTclose2"
+            app:layout_constraintRight_toRightOf="parent"
+            android:hint="Jumlah"
+            android:backgroundTint="#A2AAAD"
+            />
+
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/ETjumlah"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:src="@drawable/notes"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="32dp"
+            />
+
+
+        <EditText
+            android:id="@+id/ETcatatan"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginRight="48dp"
+            app:layout_constraintTop_toBottomOf="@+id/ETjumlah"
+            app:layout_constraintRight_toRightOf="parent"
+            android:hint="catatan"
+            android:textColor="@color/black"
+            android:backgroundTint="#A2AAAD"
+            />
+
+
+        <ImageView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/ETcatatan"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:src="@drawable/calendar_month"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="32dp"
+            />
+
+        <TextView
+            android:id="@+id/ETcalendar"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginRight="48dp"
+            app:layout_constraintTop_toBottomOf="@+id/ETcatatan"
+            app:layout_constraintRight_toRightOf="parent"
+            android:textColor="@color/black"
+            android:text="set tanggal"
+            android:textSize="14dp"
+            android:paddingTop="8dp"
+            android:fontFamily="@font/spacegroteskregular"
+            />
+
+
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="31dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="32dp"
+            android:src="@drawable/savings"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ETcalendar" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ETcalendar"
+            android:layout_marginTop="36dp"
+            android:layout_marginRight="48dp"
+            >
+
+            <Spinner
+                android:id="@+id/spinner_celengan_simpan"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

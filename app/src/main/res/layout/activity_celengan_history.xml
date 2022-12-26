@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    >
+
+    <ImageView
+        android:id="@+id/IVback_yellow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/arrow_back_ios"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="24dp"
+        />
+
+    <TextView
+        android:id="@+id/TVtitleCelengan"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/IVback_yellow"
+        android:text="Celengan Utama"
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        android:drawableLeft="@drawable/savings_yellow"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/spacegroteskregular"
+        />
+
+
+    <TextView
+        android:id="@+id/TVdeskCelengan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/TVtitleCelengan"
+        android:text="“ya tabungan utama.”"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/spacegroteskregular"
+        />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/CLtotal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/TVdeskCelengan"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        >
+        <TextView
+            android:id="@+id/TVtotalcele"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="Total Isi Celengan"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            />
+
+        <TextView
+            android:id="@+id/txt_total_celengan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="IDR"
+            app:layout_constraintTop_toBottomOf="@+id/TVtotalcele"
+            android:textColor="@color/white"
+            android:layout_marginTop="8dp"
+            android:textSize="20sp"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/CLsisa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/CLtotal"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        >
+        <TextView
+            android:id="@+id/limitCele"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="Sisa Isi Celengan"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            />
+
+        <TextView
+            android:id="@+id/txt_sisa_celengan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="IDR"
+            app:layout_constraintTop_toBottomOf="@+id/limitCele"
+            android:textColor="@color/white"
+            android:layout_marginTop="8dp"
+            android:textSize="20sp"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+    <TextView
+        android:id="@+id/TVhis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/CLsisa"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="History"
+        android:textSize="14sp"
+        android:layout_marginLeft="16dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="16dp"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/RVhitory"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/TVhis"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

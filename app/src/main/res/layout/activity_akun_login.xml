@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".akun_login"
+    android:background="@color/black"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/judul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="300dp"
+        android:gravity="center"
+        android:padding="8dp"
+        android:rotation="-90"
+        android:text="/lo·gin/"
+        android:fontFamily="@font/spacegroteskregular"
+        android:textColor="@color/white"
+        android:textSize="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_regis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        android:backgroundTint="#1E1E1E"
+        android:text="Registerasi"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toBottomOf="@id/judul"
+        app:layout_constraintRight_toLeftOf="@id/btn_login"
+        android:layout_marginRight="190dp"
+        style="?android:attr/borderlessButtonStyle"
+        />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        android:backgroundTint="#1E1E1E"
+        android:text="Login"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/judul"
+        style="?android:attr/borderlessButtonStyle"
+        />
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:hint="Tulis Email Disini..."
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/btn_regis"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:minHeight="50dp"
+        android:textSize="16sp"
+        android:fontFamily="@font/spacegroteskregular"
+
+        />
+
+    <EditText
+        android:id="@+id/etPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="numberPassword"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/etEmail"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:minHeight="50dp"
+        android:textSize="16sp"
+        android:fontFamily="@font/spacegroteskregular"
+        />
+
+    <Button
+        android:id="@+id/btnMasuk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/etPass"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="@drawable/button1"
+        android:text="Masuk"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        style="?android:attr/borderlessButtonStyle"
+        />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.953"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.024"
+        app:srcCompat="@drawable/savings__1_" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

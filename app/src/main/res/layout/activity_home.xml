@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF615"
+    >
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/BottomBar"
+
+        />
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/BottomBar"
+        android:layout_width="412dp"
+        android:layout_height="122dp"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <TextView
+            android:id="@+id/tvcelengan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|top"
+            android:layout_marginRight="120dp"
+            android:fontFamily="@font/spacegroteskregular"
+            android:gravity="center"
+            android:text="celengan"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            android:layout_marginTop="8dp"
+            />
+
+        <TextView
+            android:id="@+id/tvsimpan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|top"
+            android:layout_marginRight="40dp"
+            android:fontFamily="@font/spacegroteskregular"
+            android:gravity="center"
+            android:text="simpan"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            android:layout_marginTop="8dp"
+            />
+
+        <TextView
+            android:id="@+id/tvambil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|top"
+            android:layout_marginLeft="40dp"
+            android:fontFamily="@font/spacegroteskregular"
+            android:gravity="center"
+            android:text="ambil"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:id="@+id/tvcapaian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|top"
+            android:layout_marginLeft="120dp"
+            android:fontFamily="@font/spacegroteskregular"
+            android:gravity="center"
+            android:text="Spinwheel"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            android:layout_marginTop="8dp"/>
+
+        <Button
+            android:id="@+id/bttambah"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="40dp"
+            android:background="@drawable/group_27"
+            android:onClick="btnsimpan"
+            android:visibility="visible"
+            tools:ignore="SpeakableTextPresentCheck"
+            android:foreground="?attr/selectableItemBackground"/>
+
+        <Button
+            android:id="@+id/btambil"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="40dp"
+            android:background="@drawable/group_28"
+            android:onClick="btnambil"
+            android:foreground="?attr/selectableItemBackground"
+            tools:ignore="SpeakableTextPresentCheck,DuplicateClickableBoundsCheck" />
+
+        <Button
+            android:id="@+id/btcelengan"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="120dp"
+            android:background="@drawable/group_26"
+            tools:ignore="SpeakableTextPresentCheck"
+            android:foreground="?attr/selectableItemBackground"
+            />
+
+        <Button
+            android:id="@+id/btcapaian"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="120dp"
+            android:background="@drawable/group_25"
+            android:onClick="btncapaian"
+            tools:ignore="SpeakableTextPresentCheck"
+            android:foreground="?attr/selectableItemBackground"
+            />
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
